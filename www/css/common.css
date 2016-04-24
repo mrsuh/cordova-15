@@ -1,0 +1,97 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.info {
+    height: calc((100vmax - 100vmin) / 2);
+    width: 100%;
+    line-height: calc((100vmax - 100vmin) / 2);
+    text-align: center;
+    color: white;
+    font-size: 15vmin;
+    background: linear-gradient(rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 86%, rgba(32, 124, 229, 1) 100%);
+}
+
+.control {
+    float: left;
+    height: calc((100vmax - 100vmin) / 2);
+    width: 100%;
+    background: linear-gradient(rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 86%, rgba(32, 124, 229, 1) 100%);
+    text-align: center;
+}
+
+.control img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20vmin;
+}
+
+.field {
+    float: left;
+    position: relative;
+    width: 100vmin;
+    height: 100vmin;
+    background-color: dimgray;
+    font-size: 0;
+}
+
+.field div {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    box-sizing: border-box;
+    text-align: center;
+    transition: left .3s cubic-bezier(0.000, 0.985, 0.430, 0.630), top .3s cubic-bezier(0.000, 0.985, 0.430, 0.630);
+    background: radial-gradient(ellipse at center, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 86%, rgba(32, 124, 229, 1) 100%);
+    box-shadow:
+            2px 0 0 0 #fff,
+            0 2px 0 0 #fff,
+            2px 2px 0 0 #fff,
+            2px 0 0 0 #fff inset,
+            0 2px 0 0 #fff inset;
+}
+
+.field div:hover {
+    cursor: pointer;
+}
+
+.field div span {
+    font-size: 20vmin;
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media all and (max-height: 100vmin) {
+    .info {
+        display: inline-block;
+        float:left;
+        height: 100%;
+        width: calc((100vmax - 100vmin) / 2);
+    }
+
+    .info .label{
+        line-height: 0;
+        vertical-align: bottom;
+    }
+
+    .control {
+        display: inline-block;
+        float:right;
+        height: 100%;
+        width: calc((100vmax - 100vmin) / 2);
+    }
+    .control button {
+        display: none;
+    }
+}
