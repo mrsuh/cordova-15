@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background-color: #019e83;
+    width: 100%;
+}
+
+img.main {
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+
+.link{
+    padding-top: 25px;
+    text-align: center;
+}
+
+a {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+a img {
+    width: 25px;
+}
