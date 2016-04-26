@@ -7,8 +7,9 @@ body {
     margin: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background:  #019e83;
 }
+
 .info {
     height: calc((100vmax - 100vmin) / 2);
     width: 100%;
@@ -16,14 +17,14 @@ body {
     text-align: center;
     color: white;
     font-size: 15vmin;
-    background: linear-gradient(rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 86%, rgba(32, 124, 229, 1) 100%);
+    background:  #019e83;
 }
 
 .control {
     float: left;
     height: calc((100vmax - 100vmin) / 2);
     width: 100%;
-    background: linear-gradient(rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 86%, rgba(32, 124, 229, 1) 100%);
+    background:  #019e83;
     text-align: center;
 }
 
@@ -50,7 +51,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     transition: left .3s cubic-bezier(0.000, 0.985, 0.430, 0.630), top .3s cubic-bezier(0.000, 0.985, 0.430, 0.630);
-    background: radial-gradient(ellipse at center, rgba(73, 155, 234, 1) 0%, rgba(32, 124, 229, 1) 86%, rgba(32, 124, 229, 1) 100%);
+    background:  #019e83;
     box-shadow:
             2px 0 0 0 #fff,
             0 2px 0 0 #fff,
