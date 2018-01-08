@@ -1,1 +1,3 @@
-# cordova 15 game
+# cordova 15 app
+
+![Screen](/screen.png)
